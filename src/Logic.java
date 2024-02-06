@@ -1,8 +1,8 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Math {
-    public static void Calc() throws IOException {
+public class Logic {
+    public static void calc() throws IOException {
         char ch;
         double firstNumber;
         double secondNumber;
