@@ -4,35 +4,35 @@ import java.util.Scanner;
 public class Math {
     public static void Calc() throws IOException {
         char ch;
-        double a;
-        double b;
+        double firstNumber;
+        double secondNumber;
         do {
             Scanner scan = new Scanner(System.in);
             System.out.println("это калькулятор \n Введи первое число");
-            a = scan.nextInt();
+            firstNumber = scan.nextInt();
             System.out.println("что нужно сделать? (*) (/) (+) (-)(%)?");
             ch = (char) System.in.read();
 
 
             System.out.println("Введите второе число");
-            b = scan.nextInt();
+            secondNumber = scan.nextInt();
 
 
             switch (ch) {
                 case '*':
-                    System.out.println("Ответ" + (a * b));
+                    System.out.println("Ответ" + (firstNumber * secondNumber));
                     break;
                 case '/':
-                    System.out.println("Ответ" + (a / b));
+                    System.out.println("Ответ" + (firstNumber / secondNumber));
                     break;
                 case '+':
-                    System.out.println("Ответ" + (a + b));
+                    System.out.println("Ответ" + (firstNumber + secondNumber));
                     break;
                 case '-':
-                    System.out.println("Ответ" + (a - b));
+                    System.out.println("Ответ" + (firstNumber - secondNumber));
                     break;
                 case '%':
-                    System.out.println(a / 100 * b);
+                    System.out.println(firstNumber / 100 * secondNumber);
 
 
             }
