@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Logic {
+public class Calculyator {
     public static void calc() throws IOException {
         char ch;
         double firstNumber;
